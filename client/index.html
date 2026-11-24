@@ -55,10 +55,7 @@
             }
 
             try {
-                // Формирование URL с query-параметрами
-                //const url = `http://localhost:3000/sum?a=${encodeURIComponent(a)}&b=${encodeURIComponent(b)}`;
-                // ЗАМЕНИТЕ адрес на URL вашего Web Service из Render
-                const url = `https://ВАШ-СЕРВИС.onrender.com/sum?a=${encodeURIComponent(a)}&b=${encodeURIComponent(b)}`;
+                const url = `https://sum-service-dps9.onrender.com/sum?a=${encodeURIComponent(a)}&b=${encodeURIComponent(b)}`;
                 // Выполнение GET-запроса к серверу
                 const response = await fetch(url);
                 // Парсинг ответа в формате JSON
